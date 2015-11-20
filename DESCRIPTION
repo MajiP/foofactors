@@ -1,0 +1,11 @@
+Package: foofactors
+Title: Binds factors as one factor
+Version: 0.0.0.9000
+Authors@R: person("Poushali", "Maji", email = "poushali.maji@gmail.com", role = c("aut", "cre"))
+Description: This package performs functions on factors, like binds 2 factors into one.
+Depends: R (>= 3.2.2)
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 5.0.0
+Suggests: testthat
+Imports: dplyr
