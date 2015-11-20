@@ -1,13 +1,23 @@
 Package: foofactors
-Title: Binds factors as one factornn
+Title: Manipulate factors as you will
 Version: 0.0.0.9000
 Authors@R: person("Poushali", "Maji", email = "poushali.maji@gmail.com", role = c("aut", "cre"))
-Description: This package performs functions on factors, like binds 2 factors into one.
-Depends: R (>= 3.2.2)
+Description: This package performs functions on factors, like binds 2 factors
+    into one. Factors have driven people to extreme measures, like ordering custom
+    conference ribbons and laptop stickers to express how HELLNO we feel about
+    stringsAsFactors. And yet, sometimes you need them. Can they be made less
+    maddening? Let's find out.
+Depends:
+    R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
-RoxygenNote: 5.0.0
-Suggests: testthat
-Imports: dplyr
+RoxygenNote: 5.0.1
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+Imports:
+    dplyr
 URL: https://github.com/Poush87/foofactors
 BugReports: https://github.com/Poush87/foofactors/issues
+VignetteBuilder: knitr
