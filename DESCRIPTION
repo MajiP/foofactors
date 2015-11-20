@@ -1,5 +1,5 @@
 Package: foofactors
-Title: Binds factors as one factor
+Title: Binds factors as one factornn
 Version: 0.0.0.9000
 Authors@R: person("Poushali", "Maji", email = "poushali.maji@gmail.com", role = c("aut", "cre"))
 Description: This package performs functions on factors, like binds 2 factors into one.
