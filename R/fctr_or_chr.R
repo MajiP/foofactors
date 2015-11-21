@@ -1,4 +1,12 @@
+#' Factor or character
+#'
+#' @param x
+#'
+#' @return logical
+#' @export
+#' @examples
+#' fctr_or_chr(factor(c('a','b','a')))
 fctr_or_chr <- function(x){
-	stopifnot(is.vector(x))
+	stopifnot(is.factor(x))
 	ifelse(nlevels(x)==length(x),FALSE,TRUE)
 }

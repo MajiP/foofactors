@@ -1,12 +1,12 @@
 Package: foofactors
-Title: Manipulate factors as you will
-Version: 0.0.0.9000
-Authors@R: person("Poushali", "Maji", email = "poushali.maji@gmail.com", role = c("aut", "cre"))
-Description: This package performs functions on factors, like binds 2 factors
-    into one. Factors have driven people to extreme measures, like ordering custom
-    conference ribbons and laptop stickers to express how HELLNO we feel about
-    stringsAsFactors. And yet, sometimes you need them. Can they be made less
-    maddening? Let's find out.
+Title: Make factors less annoying
+Version: 0.0.0.9001
+Authors@R: person("Poushali", "Maji", role=c("aut", "cre"),
+  email = "poushali.maji@gmail.com")
+Description: Factors have driven people to extreme measures, like ordering
+    custom conference ribbons and laptop stickers to express how HELLNO we
+    feel about stringsAsFactors. And yet, sometimes you need them. Can they
+    be made less maddening? Let's find out.
 Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE

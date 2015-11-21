@@ -3,17 +3,25 @@ output:
   md_document:
     variant: markdown_github
 ---
-This is a practice package for stat 545. 
+This is a homework package for stat 547. 
 "foofactors" manipulates factors and makes them easier to deal with. 
+Functions include:
+**fbind** to bind two factors together
 
 ```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
 library(foofactors)
-freq_out(iris$Species)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+```
+
+**freq_out** to tabulate a factor
+
+```{r, echo=FALSE}
+freq_out(iris$Species)
+```
+
+**fctr_or_chr** to determine whether input factor should be a factor or character depending on distinct levels
+
+```{r, echo=TRUE}
+fctr_or_chr(iris$Species)
 ```
 

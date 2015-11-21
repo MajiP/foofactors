@@ -1,0 +1,40 @@
+---
+title: "foofactors for Stat 547"
+author: "Poushali Maji"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+'Foofactors' is a homework package for stat 547 that helps manipulate factors. Here are some examples using the Iris dataframe and factor Species. 
+
+## Bind two factors
+
+Bind 2 factors together using the function **fbind**
+
+```{r}
+library(foofactors)
+fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+```
+
+## Get the frequency of factor levels
+
+Tabulate the levels in a factor
+
+```{r}
+freq_out(iris$Species)
+```
+
+## Test whether a factor should a factor or character 
+
+This test depends on whether the factor has more observations than levels: if the number of unique values is equal to the number of observations, the function returns FALSE, i.e. the factor should really be a character. 
+
+```{r}
+fctr_or_chr(iris$Species)
+
+nlevels(iris$Species)
+length(iris$Species)
+#See?
