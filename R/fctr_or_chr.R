@@ -1,6 +1,6 @@
 #' Factor or character
 #'
-#' @param x
+#' @param x factor
 #'
 #' @return logical
 #' @export

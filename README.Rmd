@@ -8,7 +8,7 @@ This is a homework package for stat 547.
 Functions include:
 **fbind** to bind two factors together
 
-```{r, echo = FALSE}
+```{r, echo = TRUE}
 library(foofactors)
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 ```
@@ -19,9 +19,20 @@ fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 freq_out(iris$Species)
 ```
 
-**fctr_or_chr** to determine whether input factor should be a factor or character depending on distinct levels
+**fctr_or_chr** to determine whether input factor should be a factor or character depending on whether distinct levels = observations. Returns TRUE if factor. 
 
 ```{r, echo=TRUE}
+levels(iris$Species)
+length(iris$Species)
+#Is the Species variable a factor or not? 
 fctr_or_chr(iris$Species)
+```
+
+**reorder_factor** to reorder the levels in a factor in descending order
+```{r}
+levels(iris$Species)
+
+reorder_factor(iris$Species)
+
 ```
 

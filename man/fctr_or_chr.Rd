@@ -7,7 +7,7 @@
 fctr_or_chr(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{factor}
 }
 \value{
 logical

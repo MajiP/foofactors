@@ -3,4 +3,5 @@
 export(fbind)
 export(fctr_or_chr)
 export(freq_out)
+export(reorder_factor)
 importFrom(dplyr,"%>%")

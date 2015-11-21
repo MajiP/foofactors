@@ -13,7 +13,7 @@ vignette: >
 
 ## Bind two factors
 
-Bind 2 factors together using the function **fbind**
+Bind 2 factors together using the function **fbind()**
 
 ```{r}
 library(foofactors)
@@ -22,15 +22,15 @@ fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 
 ## Get the frequency of factor levels
 
-Tabulate the levels in a factor
+Tabulate the levels in a factor using **freq_out()**
 
 ```{r}
 freq_out(iris$Species)
 ```
 
-## Test whether a factor should a factor or character 
+## Test whether a factor should a factor or character using **fctr_or_chr()**
 
-This test depends on whether the factor has more observations than levels: if the number of unique values is equal to the number of observations, the function returns FALSE, i.e. the factor should really be a character. 
+This test depends on whether the factor has more observations than levels: if the number of unique values is equal to the number of observations, the function returns FALSE, i.e. the factor should really be a character, as it's values aren't repeated even once.  
 
 ```{r}
 fctr_or_chr(iris$Species)
@@ -38,3 +38,16 @@ fctr_or_chr(iris$Species)
 nlevels(iris$Species)
 length(iris$Species)
 #See?
+```
+
+## Reorders levels of a factor in descending order using **reorder_factor()**
+
+This function reorders the levels of a factor in descending order, alphabetically. It will accept numeric/character/logical/factor variables. 
+
+```{r}
+levels(iris$Species)
+
+reorder_factor(iris$Species)
+
+```
+
